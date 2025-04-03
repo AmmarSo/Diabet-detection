@@ -5,7 +5,7 @@ import math
 # Load the dataset
 dataframe = pd.read_csv('data/diabetes.csv')
 
-print(dataframe.head())
+#print(dataframe.head())
 
 # Define variables (weights and learning rate)
 w0 = 0.0
@@ -18,13 +18,13 @@ w6 = 0.0
 w7 = 0.0
 w8 = 0.0
 w9 = 0.0
-w10 = 0.0
+
 
 learning_rate = 0.01
 
 # Method linear scoring
 def linear_score(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10):
-    z = w0 + x1*w1 + x2*w2 + x3*w3 + x4*w4 + x5*w5 + x6*w6 + x7*w7 + x8*w8 + x9*w9 + x10*w10
+    z = w0 + x1*w1 + x2*w2 + x3*w3 + x4*w4 + x5*w5 + x6*w6 + x7*w7 + x8*w8 + x9*w9
     return z
 
 # Sigmoïd function
@@ -51,3 +51,8 @@ def grad(error, x):
 def weight_update(learning_rate, w, grad):
     new_weight = w - learning_rate*grad
     return new_weight
+
+
+for i in range(len(dataframe)):
+    print(dataframe.loc[i])
+    break
