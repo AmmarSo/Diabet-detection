@@ -3,6 +3,9 @@
 This project demonstrates how **logistic regression** works by implementing it **from scratch in Python**, using only `pandas` and `math`.  
 The model is trained on the **Pima Indians Diabetes Dataset** (available on Kaggle), with no use of machine learning libraries such as `scikit-learn`.
 
+Full Eplication on Medium :
+https://medium.com/@ammar.souchon/how-logistic-regression-works-with-a-from-scratch-example-on-the-diabetes-dataset-4c9a516ff068
+
 ## 📊 Dataset
 - **Name**: Pima Indians Diabetes Database
 - **Source**: [Kaggle Link](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
